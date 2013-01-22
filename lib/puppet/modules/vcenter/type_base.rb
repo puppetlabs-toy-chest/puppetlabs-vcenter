@@ -1,4 +1,5 @@
-require 'pathname'
+require 'pathname' # WORK_AROUND #14073
+require Pathname.new(__FILE__).dirname.expand_path
 
 module Puppet::Modules
   module VCenter
